@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Harshil Patel} \\ \vspace{5pt}
+    \href{mailto:harshilp046@gmail.com}{harshilp046@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/harxxhilgg/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/harxxhilgg}{\underline{GitHub}} $|$
+    \href{https://harshilp-portfolio.vercel.app}{\underline{Portfolio}} $|$
+    \small +91-83201-93709
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, SQL (PostgreSQL), HTML/CSS} \\
+     \textbf{Frameworks \& Libraries}{: React, React Native (Expo), Next.js, Vite, Tailwind CSS/Uniwind, Redux Toolkit, Zustand} \\
+     \textbf{Backend \& Databases}{: Node.js, Express.js, Redis, PostgreSQL} \\
+     \textbf{Tools \& Platforms}{: Git/GitHub, Postman, Ubuntu/Linux, Vercel, EAS (Expo Application Services)} \\
+     \textbf{Testing}{: React Testing Library}
+    }}
+  \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {React Native Intern}{Aug. 2025 -- Oct. 2025}
+      {IT Futurz}{(On-Site) Surat, Gujarat, India}
+      \resumeItemListStart
+        \resumeItem{Developed a delivery workflow system in a React Native (Expo) app, enabling users to create and track pickup-to-drop-off orders with real-time status updates.}
+        \resumeItem{Reduced delivery latency by 40\% using WebSocket-based tracking and implemented feature flags for dynamic runtime control without redeployment.}
+        \resumeItem{Integrated map-based pickup/drop locations, vehicle selection, and fare estimation, enabling users to configure deliveries and view estimated costs before placing orders.}
+        \resumeItem{Built reusable React Native screens and navigation flows using Expo Router and bottom sheet components, improving modularity and consistency across delivery and tracking workflows.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        % add this only in if want make physical copy of this resume else we have portfolio link on top
+        %  \item[] {\small\textbf{Personal Website:} \href{https://harshilp-portfolio.vercel.app}{\underline{harshilp-portfolio.vercel.app}}}
+        
+        \resumeProjectHeading
+          {\textbf{Protected Notepad} $|$ \emph{Next.js, TypeScript, CryptoJS, Prisma, PostgreSQL} $|$ \href{https://protected-notepad.vercel.app}{[\underline{live}]} \href{https://github.com/harxxhilgg/protected-text}{[\underline{code}]}}{July 2026 -- Aug. 2026}
+          \resumeItemListStart
+            \resumeItem{Built a password-protected web notepad with slug-based document access using Next.js and TypeScript.}
+            \resumeItem{Implemented client-side AES-256-GCM encryption with PBKDF2-based key derivation for secure storage.}
+            \resumeItem{Developed document CRUD operations using Prisma, PostgreSQL, and Next.js Server Actions.}
+            \resumeItem{Built responsive CodeMirror editor workflows with keyboard shortcuts and unsaved-changes detection.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Nextry} $|$ \emph{Next.js, TypeScript, Redux Toolkit, Supabase, Prisma, Gemini} $|$ \href{https://nex-try.vercel.app}{[\underline{live}]} \href{https://github.com/harxxhilgg/nextry}{[\underline{code}]}}{Mar. 2026 -- Jun. 2026}
+          \resumeItemListStart
+            \resumeItem{Designed and built a production-ready AI-powered Next.js platform with authentication and protected routing.}
+            \resumeItem{Integrated Gemini AI for persistent, context-aware user interactions and responses.}
+            \resumeItem{Implemented multi-tenant data isolation with Prisma and Supabase for secure user-specific data management.}
+            \resumeItem{Implemented feature flags and dynamic platform controls to streamline release management and overall deployment.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Minimal} $|$ \emph{React Native, Expo, TypeScript, Redux Toolkit, Supabase, Uniwind} $|$ \href{https://github.com/harxxhilgg/reusables-ex}{[\underline{code}]}}{Nov. 2025 -- Jan. 2026}
+          \resumeItemListStart
+            \resumeItem{Built a cross-platform React Native application with Expo Router and reusable component architecture.}
+            \resumeItem{Implemented Google and Discord OAuth authentication with Supabase and protected navigation flows.}
+            \resumeItem{Developed reusable UI components using React Native Reusables, Uniwind, and shadcn/ui.}
+            \resumeItem{Integrated Redux Toolkit, persistent storage, theming, and interactive component experiments.}
+          \resumeItemListEnd
+      
+        \resumeProjectHeading
+          {\textbf{Univent} $|$ \emph{React Native, Expo, TypeScript, Node.js, Express.js, PostgreSQL} $|$ \href{https://github.com/harxxhilgg/univent/}{[\underline{code}]}}{Jan. 2025 -- Aug. 2025}
+          \resumeItemListStart
+            \resumeItem{Built a real-time event discovery and registration platform with React Native and Expo.}
+            \resumeItem{Implemented JWT-based authentication with secure session management using AsyncStorage.}
+            \resumeItem{Developed event creation, registration, and personalized event management features.}
+            \resumeItem{Integrated push notifications for event reminders and important user updates.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Parul University (Parul Institute of Technology)}{Vadodara, Gujarat, India}
+      {Bachelor of Technology (B.Tech) in Computer Science and Engineering}{Nov. 2021 -- Nov. 2025}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+latexmk -C
